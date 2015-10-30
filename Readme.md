@@ -5,7 +5,7 @@ This is a bug that exists in iOS 9.0 - 9.2 beta 2.
 Description:
 After showing a section header in any table view, the table view footers **in the entire app** will get misplaced based on how many lines they have.
 
-This only applies to `grouped` stype table views.
+This only applies to `grouped` style table views.
 
 Steps to reproduce:
 	
