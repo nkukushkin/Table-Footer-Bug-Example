@@ -15,4 +15,4 @@ Steps to reproduce:
 	4. Tap [Static Table View] or [Dynamic Table View]
 	5. Observe how footers are misplaced!
 
-![screen](Screens/Screen.png)
+![screen](Screens/screen.png?raw=true)
