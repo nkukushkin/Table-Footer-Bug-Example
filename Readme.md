@@ -1,4 +1,4 @@
-## Table Footer Bug Tester
+## Table Footer Bug Example
 
 This is a bug that exists in iOS 9.0 - 9.2 beta 2.
 
