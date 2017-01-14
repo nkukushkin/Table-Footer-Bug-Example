@@ -1,5 +1,7 @@
 ## Table Footer Bug Example
 
+### Update: this bug was fixed in iOS 10!
+
 This is a bug that exists in iOS 9.0 - 9.2 beta 2.
 
 Description:
