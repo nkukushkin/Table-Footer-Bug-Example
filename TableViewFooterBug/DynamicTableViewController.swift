@@ -22,14 +22,14 @@ class DynamicTableViewController: UITableViewController {
         }
     }
     
-    @IBAction func addSectionHeader(sender: UIButton) {
+    @IBAction func addSectionHeader(_ sender: UIButton) {
         showSection0Header = true
     }
 
 
     // MARK: UITableViewDelegate
     
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         var headerTitle: String?
         
         if showSection0Header && section == 0 {
@@ -39,7 +39,7 @@ class DynamicTableViewController: UITableViewController {
         return headerTitle
     }
     
-    override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+    override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
         var footerTitle: String?
         
         switch section {
@@ -56,15 +56,15 @@ class DynamicTableViewController: UITableViewController {
     
     // MARK: UITableViewDataSource
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
     }
 }
